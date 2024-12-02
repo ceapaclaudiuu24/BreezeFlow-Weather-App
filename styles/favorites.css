@@ -1,0 +1,71 @@
+.favorites {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-family: "Poppins";
+  background-color: #222831;
+  -webkit-box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 20px 30px;
+}
+
+.none {
+    display: block;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.favorites-title {
+  color: white;
+  font-size: 20px;
+}
+
+.favorite-cities {
+  margin-top: 15px;
+  max-width: 60vw;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 15px;
+}
+
+.city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 8px 15px;
+  box-shadow: 4px 4px 10px 0 rgba(255, 255, 255, 0.205),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.city-title {
+  white-space: nowrap;
+  cursor: pointer;
+  color: #222831;
+  font-size: 20px;
+  width: 8em;
+  text-align: center;
+  overflow: hidden;
+}
+
+.list-heart {
+  color: rgb(233, 25, 25);
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.list-heart:hover {
+  color: rgb(140, 140, 140);
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- TODO: Please update the title of this HTML page according to your needs. -->
+    <title>BreezeFlow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="scripts/index.js" defer></script>
+    <link rel="stylesheet" href="styles/search-box.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/weather-info.css" />
+    <link rel="stylesheet" href="styles/favorites.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&family=Lily+Script+One&family=Montserrat:wght@100;300&family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&family=Lexend:wght@200&family=Lily+Script+One&family=Montserrat:wght@100;300&family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <div class="favorites">
+      <div class="favorites-title">FAVORITE LOCATIONS</div>
+      <div class="none">NONE</div>
+      <div class="favorite-cities">
+      </div>
+    </div>
+    <div class="search-box" id="search-box">
+      <div class="icon-button" onclick="toggleSearchBox()">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="app">
+      <div hidden id="spinner"></div>
+      <div class="weather-info">
+        <div class="current">
+          <div class="weather-gradient"></div>
+          <div class="current-day">
+            <h2 class="day-name">Luni</h2>
+            <div class="date-day">15 Jan 2024</div>
+            <i
+              class="fa fa-map-marker-alt location-icon"
+              aria-hidden="true"
+            ></i>
+            <div class="location">Braila, RO</div>
+          </div>
+          <div class="current-weather">
+            <h1 class="temperature">2</h1>
+            <h3 class="weather-desc">Cloudy</h3>
+          </div>
+        </div>
+        <div class="forecast">
+          <div class="today-info">
+            <div class="pressure">
+              <div class="title">PRESSURE</div>
+              <div class="value">0</div>
+            </div>
+            <div class="humidity">
+              <div class="title">HUMIDITY</div>
+              <div class="value">0</div>
+            </div>
+            <div class="wind">
+              <div class="title">WIND</div>
+              <div class="value">0</div>
+            </div>
+          </div>
+          <div class="next-days">
+            <ul class="days-list">
+              <li class="active">
+                <img class="day-weather-icon" src="" alt="" />
+                <div class="day-name">Tue</div>
+                <div class="day-temp">20</div>
+              </li>
+              <li class>
+                <img class="day-weather-icon" src="" alt="" />
+                <div class="day-name">Wed</div>
+                <div class="day-temp">20</div>
+              </li>
+              <li class>
+                <img class="day-weather-icon" src="" alt="" />
+                <div class="day-name">Thu</div>
+                <div class="day-temp">20</div>
+              </li>
+              <li class>
+                <img class="day-weather-icon" src="" alt="" />
+                <div class="day-name">Fry</div>
+                <div class="day-temp">20</div>
+              </li>
+              <li class>
+                <img class="day-weather-icon" src="" alt="" />
+                <div class="day-name">Sun</div>
+                <div class="day-temp">20</div>
+              </li>
+              <li class>
+                <img class="day-weather-icon" src="" alt="" />
+                <div class="day-name">Sun</div>
+                <div class="day-temp">20</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
